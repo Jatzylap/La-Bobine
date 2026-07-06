@@ -1,0 +1,38 @@
+.slideshow {
+    max-width: 800px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet", href="src/slideshow.css">
+	<link rel="icon" sizes="192x192" href="res/favicon.png"/ type= "image/x-icon">
+	<title>
+		Ciné-Club La Bobine
+	</title>
+</head>
+
+<body>
+	<div class="header">
+		<!-- <img src="res/menu.png" width="50" height="53"> -->
+		<img src="res/logo.png" width="120" height="123">
+		<p></p>
+		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
+			A propos
+		</button> 
+		<button id="bouton-avec-lien" onclick="window.location.href='https://la-bobine-programme-2026-2027.netlify.app';">
+			Programme
+		</button>
+		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
+			Faire un don
+		</button>
+		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
+			Contact
+		</button>
+	</div>
+
+	<div class="container">
+		<div class="slideshow">
+		    <div class="slides fade">
+		        <img src="res/slide1.png">
+		    </div>
+		    <div class="slides fade">
+		        <img src="res/slide2.png">
+		    </div>
+		    <div class="slides fade">
+		        <img src="res/slide3.png">
+		    </div>
+
+		    <div class="prev" onclick="plusSlides(-1)">
+		    	&#10094;
+		    </div>
+		    <div class="next" onclick="plusSlides(1)">
+		    	&#10095;
+		    </div>
+		</div>
+	</div>
+
+	<div class="slideshow">
+		<div class="footer">
+			<h2 class="container">
+				Restez à jour
+			</h2>
+			<form action="mailto:yokoknighter@gmail.com" method="post" enctype="text/plain">
+				<a for="email">Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp</a>
+				<input type="email" id="bouton-form" name="email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
+				<button id="bouton-avec-lien" type="submit" value="Submit">
+					S&#x27;abonner
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="src/slideshow.js"></script>
+
+
+</body>
+</html>
