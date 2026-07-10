@@ -1,73 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="style.css">
-	<link type="text/css" rel="stylesheet", href="src/slideshow.css">
+	<link type="text/css" rel="stylesheet" href="src/slideshow.css">
 	<link rel="icon" sizes="192x192" href="res/favicon.png"/ type= "image/x-icon">
 	<title>
-		Ciné-Club La Bobine
+		La Bobine - Ciné-Club à Uzel
 	</title>
 </head>
-
 <body>
+	<div id="menu-toggle">
+		<button class="bouton">&#9776; menu</button>
+	</div>
 	<div class="header">
-		<!-- <img src="res/menu.png" width="50" height="53"> -->
-		<img src="res/logo.png" width="120" height="123">
+		<p>&nbsp</p>
+		<!-- <img src="res/logo.png" width="123" height="123"> -->
+		<h2> LA</h2><p></p><h1>BOBINE</h1><p></p><a id="subtitle">Des films toute l'année à Uzel</a>
+		<p>&nbsp</p>
+	</div>
+	<div id="sidebar">
+		<img id="sidebar-logo" src="res/favicon.png" width="150" height="153">
 		<p></p>
-		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
-			A propos
+		<button class="bouton" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite', '_blank')">
+			à propos
 		</button> 
-		<button id="bouton-avec-lien" onclick="window.location.href='https://la-bobine-programme-2026-2027.netlify.app';">
-			Programme
+		<button class="bouton" onclick="window.open('https://la-bobine-programme-2026-2027.netlify.app', '_blank')">
+			programme
 		</button>
-		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
-			Faire un don
+		<button class="bouton" target="_blank" rel="noopener noreferrer" onclick="window.open('https://donate.stripe.com/dRm5kE1kscHYbqkc9Y7IY00?locale=fr','_blank')">
+			faire un don
 		</button>
-		<button id="bouton-avec-lien" onclick="window.location.href='https://cinebobineuzel.wixsite.com/monsite';">
-			Contact
+		<button class="bouton" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite', '_blank')">
+			contact
 		</button>
 	</div>
-
-	<div class="container">
-		<div class="slideshow">
-		    <div class="slides fade">
-		        <img src="res/slide1.png">
-		    </div>
-		    <div class="slides fade">
-		        <img src="res/slide2.png">
-		    </div>
-		    <div class="slides fade">
-		        <img src="res/slide3.png">
-		    </div>
-
-		    <div class="prev" onclick="plusSlides(-1)">
-		    	&#10094;
-		    </div>
-		    <div class="next" onclick="plusSlides(1)">
-		    	&#10095;
-		    </div>
-		</div>
-	</div>
-
 	<div class="slideshow">
-		<div class="footer">
-			<h2 class="container">
-				Restez à jour
-			</h2>
-			<form action="mailto:yokoknighter@gmail.com" method="post" enctype="text/plain">
-				<a for="email">Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp</a>
-				<input type="email" id="bouton-form" name="email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
-				<button id="bouton-avec-lien" type="submit" value="Submit">
-					S&#x27;abonner
-				</button>
-			</form>
-		</div>
+	    <div class="slides active">
+	        <img src="res/télécharger.jpg">
+	        <div class="slide_text">
+	        	Barry <br></br>Lyndon
+	        </div>
+		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+	    </div>
+	    <div class="slides">
+	        <img src="res/télécharger (1).jpg">
+	        <span class="slide_text">Hello there</span>
+		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+	    </div>
+	    <div class="slides">
+	        <img src="res/télécharger (2).jpg">
+	        <span class="slide_text">Hello there</span>
+		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+	    </div>
 	</div>
-
+	<div class="footer">
+<!-- 	<h3>Restez à jour</h3>
+ 		<form action="mailto:yokoknighter@gmail.com" method="post" enctype="text/plain">
+			<label for="email">
+				Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
+			</label>
+			<input type="email" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" onkeyup="getLink()">
+			<button class="bouton" type="submit" value="Submit">
+				S&#x27;abonner
+			</button>
+		</form>
+ 		<label for="email">
+			Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
+		</label>
+	  	<input type="email" class="bouton" id="bouton-form" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" placeholder="Saisissez votre email ici*" onkeyup="getLink()">
+ 	  	<p>&nbsp</p>-->
+		<a class="bouton" id="send_email" href="mailto:cine.bobine.uzel@gmail.com/subject?=Demande d'abonnement newsletter&body=Bonjour, je voudrais suivre le newsletter de la Bobine.">
+			s&#x27;abonner à notre newsletter
+		</a>
+	</div>
 	<script src="src/slideshow.js"></script>
+	<script src="src/newsletter.js"></script>
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+	    const toggle = document.getElementById("menu-toggle");
+	    const sidebar = document.getElementById("sidebar");
 
-
+	    toggle.addEventListener("click", () => {
+	        sidebar.classList.toggle("open");
+	    });
+	});
+	</script>
 </body>
 </html>

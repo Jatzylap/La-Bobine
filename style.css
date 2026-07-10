@@ -1,10 +1,19 @@
 h1
 {
-  color: black;
-  font-size: 40px;
+  color: #fc9779;
+  font-size: 64px;
+  text-transform: bold;
+  line-height: 0;
 }
 
 h2
+{
+  color: #fc9779;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3
 {
   color: black;
   font-size: 30px;
@@ -19,26 +28,9 @@ body
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-#bouton-avec-lien {
-  background: black;
-  color: white;
-  padding: 12px 32px;
-  font-size: 13px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-#bouton-form {
-  background: black;
-  color: white;
-  padding: 12px 0px;
-  text-align: center;
-}
-
-.padr
+.header
 {
-  padding-right: 250px;
+  text-align: center;
 }
 
 .container
@@ -46,14 +38,78 @@ body
   text-align: left;
 }
 
-.header
+.footer
 {
   text-align: center;
 }
 
-.footer
+#subtitle
 {
-  text-align: right;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.15em;
 }
 
-@media print { #bouton-avec-lien { display: none !important; } }
+#sidebar-logo
+{
+  padding: 8px 8px;
+}
+
+#menu-toggle
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1001;
+}
+
+#sidebar
+{
+  position: fixed;
+  left: -170px;
+  top: 0px;
+  padding: 100px 0;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: left 0.1s ease;
+  z-index: 1000;
+}
+
+#sidebar.open
+{
+    left: 0px;
+}
+
+#sidebar .bouton
+{
+    display: block;
+    margin: 5px 0px;
+}
+
+.bouton:hover
+{
+    background: rgba(64,64,64,0.9);
+}
+
+.bouton
+{
+  background: rgba(0,0,0,0.9);
+  color: white;
+  padding: 22px;
+  width: 170px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#bouton-form
+{
+  background: rgba(0,0,0,0.9);
+  cursor: text;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+
+@media print { .bouton { display: none !important; } }
