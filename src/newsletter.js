@@ -12,7 +12,4 @@ function getLink()
 }
 */
 
-function saveEmail()
-{
-  
-}
+do something like nodejs code here
