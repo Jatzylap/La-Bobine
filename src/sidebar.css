@@ -1,0 +1,64 @@
+#sidebar-logo
+{
+  padding: 8px 8px;
+}
+
+#menu-toggle
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1001;
+}
+
+#sidebar
+{
+  position: fixed;
+  left: -170px;
+  top: 0px;
+  padding: 100px 0;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: left 0.1s ease;
+  z-index: 1000;
+}
+
+#sidebar.open
+{
+    left: 0px;
+}
+
+#sidebar .bouton
+{
+    display: block;
+    margin: 5px 0px;
+}
+
+.bouton:hover
+{
+    background: rgba(64,64,64,0.9);
+}
+
+.bouton
+{
+  background: rgba(0,0,0,0.9);
+  color: white;
+  padding: 22px;
+  width: 170px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#bouton-form
+{
+  background: rgba(0,0,0,1);
+  cursor: text;
+  width: 150px;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+
+@media print { .bouton { display: none !important; } }

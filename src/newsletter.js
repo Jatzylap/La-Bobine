@@ -1,6 +1,7 @@
+/*
 function getLink()
 {
-  var link = document.getElementById('send_email');
+  var link = document.getElementById('bouton-mail');
   var sender = document.getElementById('bouton-form').value;
   var subject = "Demande d'abonnement newsletter";
   var message = "Bonjour, je voudrais suivre le newsletter de la Bobine! \nMon e-mail: " + sender;
@@ -8,4 +9,10 @@ function getLink()
   var href = "mailto:" + receiver + "?subject=" + subject + "&body=" + message;
   if (sender != "") link.setAttribute("href", href);
   else link.setAttribute("href", "");
+}
+*/
+
+function saveEmail()
+{
+  
 }

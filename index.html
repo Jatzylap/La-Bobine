@@ -5,6 +5,7 @@
 <head>
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link type="text/css" rel="stylesheet" href="src/slideshow.css">
+	<link type="text/css" rel="stylesheet" href="src/sidebar.css">
 	<link rel="icon" sizes="192x192" href="res/favicon.png"/ type= "image/x-icon">
 	<title>
 		La Bobine - Ciné-Club à Uzel
@@ -15,10 +16,9 @@
 		<button class="bouton">&#9776; menu</button>
 	</div>
 	<div class="header">
-		<p>&nbsp</p>
-		<!-- <img src="res/logo.png" width="123" height="123"> -->
+		<br></br>
 		<h2> LA</h2><p></p><h1>BOBINE</h1><p></p><a id="subtitle">Des films toute l'année à Uzel</a>
-		<p>&nbsp</p>
+		<br></br>
 	</div>
 	<div id="sidebar">
 		<img id="sidebar-logo" src="res/favicon.png" width="150" height="153">
@@ -29,7 +29,7 @@
 		<button class="bouton" onclick="window.open('https://la-bobine-programme-2026-2027.netlify.app', '_blank')">
 			programme
 		</button>
-		<button class="bouton" target="_blank" rel="noopener noreferrer" onclick="window.open('https://donate.stripe.com/dRm5kE1kscHYbqkc9Y7IY00?locale=fr','_blank')">
+		<button class="bouton" onclick="window.open('https://donate.stripe.com/dRm5kE1kscHYbqkc9Y7IY00?locale=fr','_blank')">
 			faire un don
 		</button>
 		<button class="bouton" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite', '_blank')">
@@ -40,12 +40,12 @@
 	    <div class="slides active">
 	        <img src="res/télécharger.jpg">
 	        <div class="slide_text">
-	        	Barry <br></br>Lyndon
+	        	Journées du Patrimoine
 	        </div>
-		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+		    <!-- <div class="prev" onclick="plusSlides(-1)">&#10094;</div> -->
+		    <!-- <div class="next" onclick="plusSlides(1)">&#10095;</div> -->
 	    </div>
-	    <div class="slides">
+<!-- 	    <div class="slides">
 	        <img src="res/télécharger (1).jpg">
 	        <span class="slide_text">Hello there</span>
 		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
@@ -56,30 +56,20 @@
 	        <span class="slide_text">Hello there</span>
 		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
 		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
-	    </div>
+	    </div> -->
 	</div>
-	<div class="footer">
-<!-- 	<h3>Restez à jour</h3>
- 		<form action="mailto:yokoknighter@gmail.com" method="post" enctype="text/plain">
-			<label for="email">
-				Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
-			</label>
-			<input type="email" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" onkeyup="getLink()">
-			<button class="bouton" type="submit" value="Submit">
-				S&#x27;abonner
-			</button>
-		</form>
- 		<label for="email">
-			Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
-		</label>
-	  	<input type="email" class="bouton" id="bouton-form" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" placeholder="Saisissez votre email ici*" onkeyup="getLink()">
- 	  	<p>&nbsp</p>-->
-		<a class="bouton" id="send_email" href="mailto:cine.bobine.uzel@gmail.com/subject?=Demande d'abonnement newsletter&body=Bonjour, je voudrais suivre le newsletter de la Bobine.">
-			s&#x27;abonner à notre newsletter
-		</a>
-	</div>
+	<div class="slideshow">
+		<div class="footer">
+	 		<form action="src/newsletter.js" method="post" enctype="text/plain">
+				<label for="email">
+					Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
+				</label>
+				<input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
+				<button class="bouton" type="submit" value="Submit">S&#x27;abonner</button>
+			</form>
+ 	  	</div>
+ 	</div>
 	<script src="src/slideshow.js"></script>
-	<script src="src/newsletter.js"></script>
 	<script>
 	document.addEventListener("DOMContentLoaded", () => {
 	    const toggle = document.getElementById("menu-toggle");
