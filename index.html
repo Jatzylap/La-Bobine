@@ -60,21 +60,24 @@
 	</div>
 	<div class="slideshow">
 		<div class="footer">
-	 		<form action="src/newsletter.js" method="post" enctype="text/plain">
+	 		<form action="javascript:saveEmail()" method="post" enctype="text/plain">
 				<label for="email">
 					Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
 				</label>
 				<input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
-				<button class="bouton" type="submit" value="Submit">S&#x27;abonner</button>
+				<button class="bouton" type="submit" value="Submit">
+					S&#x27;abonner
+				</button>
+				<div id="message">Merci pour votre envoi.</div>
 			</form>
  	  	</div>
  	</div>
 	<script src="src/slideshow.js"></script>
+	<script src="src/newsletter.js"></script>
 	<script>
 	document.addEventListener("DOMContentLoaded", () => {
 	    const toggle = document.getElementById("menu-toggle");
 	    const sidebar = document.getElementById("sidebar");
-
 	    toggle.addEventListener("click", () => {
 	        sidebar.classList.toggle("open");
 	    });

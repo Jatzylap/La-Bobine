@@ -49,3 +49,15 @@ body
   font-size: 15px;
   letter-spacing: 0.15em;
 }
+
+#message
+{
+  opacity: 0;
+  text-align: right;
+  text-transform: bold;
+}
+
+#message.toggle
+{
+  opacity: 1;
+}
