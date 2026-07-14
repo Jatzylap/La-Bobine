@@ -1,6 +1,7 @@
 #sidebar-logo
 {
-  padding: 8px 8px;
+  display: block;
+  margin: 0 auto 12px;
 }
 
 #menu-toggle
@@ -16,11 +17,16 @@
   position: fixed;
   left: -300px;
   top: 0px;
-  padding: 100px 0;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
+  padding: 100px 0 30px;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: white;
   transition: left 0.1s ease;
   z-index: 1000;
+  justify-items: center;
 }
 
 #sidebar.open
@@ -43,9 +49,9 @@
 {
   background: rgba(0,0,0,0.9);
   color: white;
-  padding: 22px;
-  width: 300px;
-  font-size: 30px;
+  padding: 30px;
+  width: 270px;
+  font-size: 25px;
   letter-spacing: 0.15em;
   cursor: pointer;
   border: none;
