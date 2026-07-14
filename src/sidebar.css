@@ -14,7 +14,7 @@
 #sidebar
 {
   position: fixed;
-  left: -300px;
+  left: -170px;
   top: 0px;
   padding: 100px 0;
   height: 100%;
@@ -44,8 +44,8 @@
   background: rgba(0,0,0,0.9);
   color: white;
   padding: 22px;
-  width: 300px;
-  font-size: 30px;
+  width: 170px;
+  font-size: 50px;
   letter-spacing: 0.15em;
   cursor: pointer;
   border: none;

@@ -1,7 +1,7 @@
 h1
 {
   color: #fc9779;
-  font-size: 86px;
+  font-size: 64px;
   text-transform: bold;
   line-height: 0;
 }
@@ -9,14 +9,14 @@ h1
 h2
 {
   color: #fc9779;
-  font-size: 52px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
 h3
 {
   color: black;
-  font-size: 52px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -24,7 +24,7 @@ body
 {
   color: black;
   background: #f8f8f6;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -46,7 +46,7 @@ body
 #subtitle
 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 0.15em;
 }
 
@@ -60,9 +60,4 @@ body
 #message.toggle
 {
   opacity: 1;
-}
-
-#space
-{
-  line-height: 20px;
 }
