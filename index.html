@@ -16,7 +16,7 @@
 		<button class="bouton">&#9776; menu</button>
 	</div>
 	<div class="header">
-		<br></br>
+		<div id="space"> <br></br> </div> 
 		<h2> LA</h2><p></p><h1>BOBINE</h1><p></p><a id="subtitle">Des films toute l'année à Uzel</a>
 		<br></br>
 	</div>
@@ -27,7 +27,7 @@
 			à propos
 		</button> 
 		<button class="bouton" onclick="window.open('https://la-bobine-programme-2026-2027.netlify.app', '_blank')">
-			programme
+			programmes
 		</button>
 		<button class="bouton" onclick="window.open('https://donate.stripe.com/dRm5kE1kscHYbqkc9Y7IY00?locale=fr','_blank')">
 			faire un don
@@ -38,10 +38,13 @@
 	</div>
 	<div class="slideshow">
 	    <div class="slides active">
-	        <img src="res/télécharger.jpg">
-	        <div class="slide_text">
-	        	Journées du Patrimoine
+	        <img src="res/gueules-bleues.png">
+	        <div class="slide_text" id="st_line1">
+	        	Les Gueules Bleues de Guerlédan
 	        </div>
+	        <div class="slide_text" id="st_line2">
+	        	19 Septembre 2026
+	        </div> 
 		    <!-- <div class="prev" onclick="plusSlides(-1)">&#10094;</div> -->
 		    <!-- <div class="next" onclick="plusSlides(1)">&#10095;</div> -->
 	    </div>
@@ -64,11 +67,14 @@
 				<label for="email">
 					Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
 				</label>
-				<input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
-				<button class="bouton" type="submit" value="Submit">
+				<!-- <input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off"> -->
+<!-- 				<button class="bouton" type="submit" value="Submit">
+					S&#x27;abonner
+				</button> -->
+				<button class="bouton" onclick="sendEmail()">
 					S&#x27;abonner
 				</button>
-				<div id="message">Merci pour votre envoi.</div>
+				<div id="message">Merci.</div>
 			</form>
  	  	</div>
  	</div>

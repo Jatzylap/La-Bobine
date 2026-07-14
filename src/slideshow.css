@@ -47,7 +47,7 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 12px 18px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     background: rgba(0,0,0,0.35);
@@ -67,10 +67,20 @@
     top: 50px;
     left: 50px;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     z-index: 5;
-    line-height: 0.7em;
+    line-height: 1.0em;
     background: black;
     padding: 10px;
+}
+
+#st_line1
+{
+    top: 50px;
+}
+
+#st_line2
+{ 
+    top: 170px;
 }
