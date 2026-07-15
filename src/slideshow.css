@@ -63,7 +63,7 @@
 .slide_text
 {
     position: absolute;
-    display: flex;
+    display: block;
     top: 50px;
     left: 60px;
     color: white;
@@ -71,7 +71,7 @@
     font-weight: bold;
     z-index: 5;
     line-height: 1.0em;
-    background: black;
+    background-color: #1a1a2e;
     padding: 10px;
 }
 
@@ -82,5 +82,5 @@
 
 #st_line2
 { 
-    top: 170px;
+    top: 120px;
 }

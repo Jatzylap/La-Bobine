@@ -1,15 +1,7 @@
 #sidebar-logo
 {
   display: block;
-  margin: 0 auto 12px;
-}
-
-#menu-toggle
-{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1001;
+  margin: 110px auto 20px;
 }
 
 #sidebar
@@ -17,16 +9,13 @@
   position: fixed;
   left: -300px;
   top: 0px;
-  padding: 100px 0 30px;
-  height: 100vh;
-  max-height: 100vh;
+  max-height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
   background: white;
   transition: left 0.1s ease;
   z-index: 1000;
-  justify-items: center;
 }
 
 #sidebar.open
@@ -34,38 +23,8 @@
     left: 0px;
 }
 
-#sidebar .bouton
+#sidebar #bouton-sidebar
 {
     display: block;
-    margin: 5px 0px;
+    margin: 10px auto;
 }
-
-.bouton:hover
-{
-    background: rgba(64,64,64,0.9);
-}
-
-.bouton
-{
-  background: rgba(0,0,0,0.9);
-  color: white;
-  padding: 30px;
-  width: 270px;
-  font-size: 25px;
-  letter-spacing: 0.15em;
-  cursor: pointer;
-  border: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#bouton-form
-{
-  background: rgba(0,0,0,1);
-  cursor: text;
-  width: 150px;
-  letter-spacing: 0em;
-  text-transform: none;
-}
-
-@media print { .bouton { display: none !important; } }

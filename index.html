@@ -6,90 +6,97 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link type="text/css" rel="stylesheet" href="src/slideshow.css">
 	<link type="text/css" rel="stylesheet" href="src/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="src/bouton.css">
 	<link rel="icon" sizes="192x192" href="res/favicon.png"/ type= "image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 	<title>
 		La Bobine - Ciné-Club à Uzel
 	</title>
 </head>
 <body>
-	<div id="menu-toggle">
-		<button class="bouton">&#9776; menu</button>
-	</div>
-	<div class="header">
-		<br></br>
-		<h2> LA</h2><p></p><h1>BOBINE</h1><p></p><h3 id="subtitle">Des films toute l'année à Uzel</h3>
-		<br></br>
-	</div>
 	<div id="sidebar">
+		<button class="bouton" id="bouton-menu" onclick="clickMenu()">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<line x1="4" y1="6" x2="20" y2="6"></line>
+				<line x1="4" y1="12" x2="20" y2="12"></line>
+				<line x1="4" y1="18" x2="20" y2="18"></line>
+			</svg>
+		</button>
 		<img id="sidebar-logo" src="res/logo.png" width="160" height="160">
 		<p></p>
-		<button class="bouton" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite/projet', '_blank')">
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite/projet', '_blank')">
 			à propos
 		</button> 
-		<button class="bouton" onclick="window.open('https://la-bobine-programme-2026-2027.netlify.app', '_blank')">
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://la-bobine-programme-2026-2027.netlify.app', '_blank')">
 			programmes
 		</button>
-		<button class="bouton" onclick="window.open('https://donate.stripe.com/dRm5kE1kscHYbqkc9Y7IY00?locale=fr','_blank')">
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://www.helloasso.com/associations/la-bobine-22/formulaires/1','_blank')">
 			faire un don
 		</button>
-		<button class="bouton" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite', '_blank')">
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://cinebobineuzel.wixsite.com/monsite', '_blank')">
 			contact
 		</button>
+		<button class="bouton" id="bouton-sidebar" onclick="sendEmail()">
+			suggérer
+		</button>
 	</div>
-	<div class="slideshow">
-	    <div class="slides active">
-	        <img src="res/gueules-bleues.png">
-	        <div class="slide_text" id="st_line1">
-	        	Les Gueules Bleues de Guerlédan
-	        </div>
-	        <div class="slide_text" id="st_line2">
-	        	19 Septembre 2026
-	        </div> 
-		    <!-- <div class="prev" onclick="plusSlides(-1)">&#10094;</div> -->
-		    <!-- <div class="next" onclick="plusSlides(1)">&#10095;</div> -->
-	    </div>
-<!-- 	    <div class="slides">
-	        <img src="res/télécharger (1).jpg">
-	        <span class="slide_text">Hello there</span>
-		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
-	    </div>
-	    <div class="slides">
-	        <img src="res/télécharger (2).jpg">
-	        <span class="slide_text">Hello there</span>
-		    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-		    <div class="next" onclick="plusSlides(1)">&#10095;</div>
-	    </div> -->
-	</div>
-	<div class="slideshow">
-		<div class="footer">
+	<div class="container">
+		<div class="header">
+			<h2>LA</h2><h1>BOBINE</h1><p></p><h3>Des films toute l'année à Uzel</h3>
+		</div>
+		<div class="slideshow">
+		    <div class="slides active">
+		        <img src="res/gueules-bleues.png">
+		        <div class="slide_text" id="st_line1">
+		        	Fin de saison 2025-2026
+		        </div>
+			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+			    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+		    </div>
+			<div class="slides">
+		        <img src="res/télécharger (1).jpg">
+		        <div class="slide_text" id="st_line1">
+		        	Fin de saison 2025-2026
+		        </div>
+			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+			    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+		    </div>
+		    <div class="slides">
+		        <img src="res/télécharger (2).jpg">
+		        <div class="slide_text" id="st_line1">
+		        	hello there
+		        </div>
+		        <audio controls class="slide_text">
+  					<source src="res/maggie.mp3" type="audio/mpeg">
+				</audio>
+			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+			    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+		    </div>
+		</div>
+		<div class="slideshow">
+			<div class="text-pad">
+				Toute l’équipe de La Bobine vous souhaite de très bonnes vacances et vous donne rendez-vous à l'occasion des JEP le 19 et 20 septembre. <a href='https://www.helloasso.com/associations/la-bobine-22/evenements/journees-du-patrimoine-19-et-20-sept-2026'><br>Plus d'info ici.</a>
+			</div>
 			<br></br>
-	 		<form action="javascript:saveEmail()" method="post" enctype="text/plain">
-				<label for="email">
-					Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
-				</label>
-				<!-- <input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off"> -->
-<!-- 				<button class="bouton" type="submit" value="Submit">
-					S&#x27;abonner
-				</button> -->
-				<br></br>
-				<button class="bouton" onclick="sendEmail()">
-					S&#x27;abonner
+			<div class="footer">
+				<button class="bouton" id="bouton-adh" onclick="window.open('https://www.helloasso.com/associations/la-bobine-22/adhesions/adhesion-2026-2027','_blank')">
+					adhésion en ligne
 				</button>
-				<!-- <div id="message">Merci.</div> -->
-			</form>
- 	  	</div>
+	<!-- 	 		<form action="javascript:saveEmail()" method="post" enctype="text/plain">
+					<label for="email">
+						Abonnez-vous pour recevoir notre newsletter &nbsp &nbsp
+					</label>
+					<input type="email" class="bouton" id="bouton-form" name="Email" placeholder="Saisissez votre email ici*" required pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off">
+					<button class="bouton" type="submit" value="Submit">
+						S&#x27;abonner
+					</button>
+					<div id="message">Merci.</div>
+				</form> -->
+	 	  	</div>
+	 	</div>
  	</div>
 	<script src="src/slideshow.js"></script>
-	<script src="src/newsletter.js"></script>
-	<script>
-	document.addEventListener("DOMContentLoaded", () => {
-	    const toggle = document.getElementById("menu-toggle");
-	    const sidebar = document.getElementById("sidebar");
-	    toggle.addEventListener("click", () => {
-	        sidebar.classList.toggle("open");
-	    });
-	});
-	</script>
+	<script src="src/email.js"></script>
+	<script src="src/sidebar.js"></script>
 </body>
 </html>
