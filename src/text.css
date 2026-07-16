@@ -1,0 +1,106 @@
+body
+{
+  color: black;
+  background: #F7F5EE;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1
+{
+  color: white;
+  font-size: 90px;
+  line-height: 0px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h2
+{
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 0px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h3
+{
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h4
+{
+  color: #AE0000;
+  letter-spacing: 0.3em;
+  line-height: 0em;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  text-align: left;
+}
+
+.slide_text
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 5;
+    background-color: #1a1a2e;
+    padding: 10px 10px;
+}
+
+#st_line1
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    max-width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+}
+
+#st_line2
+{ 
+    top: 120px;
+}
+
+#pdp
+{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+}
+
+/*#message
+{
+  opacity: 0;
+  text-align: right;
+  text-transform: bold;
+}
+
+#message.toggle
+{
+  opacity: 1;
+}*/

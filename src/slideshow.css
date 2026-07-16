@@ -31,7 +31,7 @@
 
 .slides img:hover
 {
-    filter: brightness(0.5);
+    scale: 1.1;
     transition: 0.5s ease;
 }
 
@@ -59,28 +59,3 @@
 
 .prev { left: 10px; }
 .next { right: 10px; }
-
-.slide_text
-{
-    position: absolute;
-    display: block;
-    top: 50px;
-    left: 60px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    z-index: 5;
-    line-height: 1.0em;
-    background-color: #1a1a2e;
-    padding: 10px;
-}
-
-#st_line1
-{
-    top: 50px;
-}
-
-#st_line2
-{ 
-    top: 120px;
-}
