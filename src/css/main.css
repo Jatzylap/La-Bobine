@@ -2,6 +2,8 @@
 {
   text-align: center;
   background: #DC7064;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .container

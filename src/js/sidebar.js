@@ -7,12 +7,8 @@ function clickMenu()
     overlay.onclick = () => clickMenu();
 }
 
-function clickPrograms(event)
+function clickPrograms()
 {
-    if (event) {
-        event.preventDefault();
-    }
-
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("programs-open");
     return false;

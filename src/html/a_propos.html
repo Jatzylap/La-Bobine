@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+	<link type="text/css" rel="stylesheet" href="../css/main.css">
+	<link type="text/css" rel="stylesheet" href="../css/text.css">
+	<link type="text/css" rel="stylesheet" href="../css/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="../css/bouton.css">
+	<link rel="icon" sizes="192x192" href="res/favicon.png" type= "image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+	<title>
+		La Bobine - Ciné-Club à Uzel
+	</title>
+</head>
+<body>
+	<div id="overlay"></div>
+	<div id="sidebar">
+		<button class="bouton" id="bouton-menu" onclick="clickMenu()">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<line x1="4" y1="6" x2="20" y2="6"></line>
+				<line x1="4" y1="12" x2="20" y2="12"></line>
+				<line x1="4" y1="18" x2="20" y2="18"></line>
+			</svg>
+		</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a class="bouton" id="bouton-sidebar" href="../html/a_propos.html">
+			à propos
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="clickPrograms()">
+			programmes<br>
+			▾
+		</button>
+		<a class="bouton" id="bouton-sidebar-child" target="_blank" href="https://la-bobine-programme-2026-2027.netlify.app">
+			2026-2027
+		</a>
+		<a class="bouton" id="bouton-sidebar-child" href="../html/programme_25_26.html">
+			2025-2026
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://www.helloasso.com/associations/la-bobine-22/formulaires/1','_blank')">
+			faire un don
+		</button>
+		<a class="bouton" id="bouton-sidebar" href="../html/contact.html">
+			contact
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="sendEmail()">
+			suggérer
+		</button>
+	</div>
+	<div class="container">
+		<a class="header" href="../../index.html">
+			<h2>LA</h2>
+			<h1>BOBINE</h1>
+			<p></p>
+			<h3>KASTELL D'Ô &nbsp • &nbsp Place Du Champ De Foire &nbsp • &nbsp 22460 Uzel</h3>
+		</a>
+		<div style="margin: 30px;">
+			<h3 style="color: black; letter-spacing: 0.01px; font-weight: bold">La Bobine : Uzel s’éveille au cinéma associatif</h3>
+			<br>
+			Depuis novembre 2025, La Bobine apporte une bouffée de cinéma à Uzel. Ce ciné-club, installé au Kastell d’Ô, propose deux projections mensuelles – un mercredi et un dimanche – dans une ambiance chaleureuse, avec une programmation qui fait la part belle à la diversité : classiques restaurés, animations primées et drames contemporains.
+			<br>
+			<br>
+			<br>
+	 	</div>
+ 	</div>
+	<div class="footer">
+		<div id="pdp">
+			© Ciné-Club La Bobine 2026 
+		</div>
+	</div>
+	<script src="../js/sidebar.js"></script>
+</body>
+</html>
