@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /src/
+Sitemap: https://www.labobineuzel.fr/sitemap.xml
+Sitemap: http://www.labobineuzel.fr/sitemap.xml
+Sitemap: https://labobineuzel.fr/sitemap.xml
+Sitemap: http://labobineuzel.fr/sitemap.xml
