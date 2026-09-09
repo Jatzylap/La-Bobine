@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap")
+
 .header
 {
   text-align: center;
@@ -37,8 +39,7 @@
 
 
 @media (max-width: 920px) {
-  .container
-  {
+  .container {
     margin: 0;
     width: 100%;
   }
