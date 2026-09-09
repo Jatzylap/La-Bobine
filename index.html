@@ -7,7 +7,7 @@
 	<link type="text/css" rel="stylesheet" href="src/css/main.css">
 	<link type="text/css" rel="stylesheet" href="src/css/text.css">
 	<link type="text/css" rel="stylesheet" href="src/css/slideshow.css">
-	<!-- <link type="text/css" rel="stylesheet" href="src/css/sidebar.css"> -->
+	<link type="text/css" rel="stylesheet" href="src/css/sidebar.css">
 	<link type="text/css" rel="stylesheet" href="src/css/bouton.css">
 	<link rel="icon" sizes="192x192" href="res/favicon.png" type= "image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -17,25 +17,60 @@
 </head>
 <body>
 	<div id="overlay"></div>
-	<div id="sidebar"></div>
+	<div id="sidebar">
+		<button class="bouton" id="bouton-menu" onclick="clickMenu()">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<line x1="4" y1="6" x2="20" y2="6"></line>
+				<line x1="4" y1="12" x2="20" y2="12"></line>
+				<line x1="4" y1="18" x2="20" y2="18"></line>
+			</svg>
+		</button>
+		<!-- <img id="sidebar-logo" src="res/favicon.png" width="160" height="160"> -->
+		<br>
+		<br>
+		<br>
+		<br>
+		<a class="bouton" id="bouton-sidebar" href="src/html/a_propos.html">
+			à propos
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="clickPrograms()">
+			programmes<br>
+			▾
+		</button>
+		<a class="bouton" id="bouton-sidebar-child" target="_blank" href="https://la-bobine-programme-2026-2027.netlify.app">
+			2026-2027 <span style="font-family: Calibri, sans-serif; font-size: 15px"><sup>&#8599;</sup></span>
+		</a>
+		<a class="bouton" id="bouton-sidebar-child" href="src/html/programme_25_26.html">
+			2025-2026
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="window.open('https://www.helloasso.com/associations/la-bobine-22/formulaires/1','_blank')">
+			faire un don <span style="font-family: Calibri, sans-serif; font-size: 15px"><sup>&#8599;</sup></span>
+		</button>
+		<a class="bouton" id="bouton-sidebar" href="src/html/contact.html">
+			contact
+		</a>
+		<button class="bouton" id="bouton-sidebar" onclick="sendEmail()">
+			suggérer <span style="font-family: Calibri, sans-serif; font-size: 15px"><sup>&#8599;</sup></span>
+		</button>
+	</div>
 	<div class="container">
-		<a class="header" href="index">
+		<a class="header" href="index.html">
 			<h2>LA</h2>
 			<h1>BOBINE</h1>
 			<p></p>
-			<h3>UZEL &nbsp • &nbsp MERLéAC &nbsp • &nbsp ALLINEUC</h3>
+			<h3>KASTELL D'Ô &nbsp • &nbsp Place Du Champ De Foire &nbsp • &nbsp 22460 Uzel</h3>
 		</a>
 		<div class="slideshow">
 		    <div class="slides active">
-		        <img src="res/jep/gueules-bleues-5.png">
+		        <img src="res/joshua-hoehne-oT4jQplDFYU-unsplash.jpg">
 		        <div class="slide_text" id="st_line1">
-		        	Les Gueules Bleues
+		        	Fin de saison 2025-2026
 		        </div>
- 			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+<!-- 			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
 			    <div class="next" onclick="plusSlides(1)">&#10095;</div> -->
 		    </div>
-			<div class="slides">
-		        <img src="res/jep/télécharger (1).jpg">
+<!-- 			<div class="slides">
+		        <img src="res/télécharger (1).jpg">
 		        <div class="slide_text" id="st_line1">
 		        	Fin de saison 2025-2026
 		        </div>
@@ -52,7 +87,7 @@
 				</audio>
 			    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
 			    <div class="next" onclick="plusSlides(1)">&#10095;</div>
-		    </div>
+		    </div> -->
 		</div>
 		<div class="slideshow">
 			<div class="text">
@@ -82,6 +117,7 @@
 		</div>
 	</div>
 	<script src="src/js/slideshow.js"></script>
+	<script src="src/js/email.js"></script>
 	<script src="src/js/sidebar.js"></script>
 </body>
 </html>
