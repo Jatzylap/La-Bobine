@@ -1,8 +1,37 @@
+@import url(
+  "https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+);
+@import "text.css";
+@import "sidebar.css";
+@import "bouton.css";
+
+:root
+{
+  --pantone7417c: #E04E39;
+  --leblues : #1A1A2E;
+  --leblues-clair : #4d4d83;
+}
+
+body
+{
+  background: #F7F5EE;
+  margin: 0;
+}
+
+body.dark
+{
+  background: #080A11;
+}
+
 .header
 {
+  display: block;
+  background: var(--pantone7417c);
   text-align: center;
-  background: #DC7064;
   cursor: pointer;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin: 0 120px;
   text-decoration: none;
 }
 
@@ -10,18 +39,51 @@
 {
   background: white;
   margin: 0 120px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.container.dark
+{
+  background: #222222;
+}
+
+.sub-container
+{
+  margin: 0px 0px 30px 4%;
+  max-width: 100%;
+  width: 92%;
+  min-height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-container img
+{
+  width: auto;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+}
+
 .footer
 {
-  background: #1a1a2e;
+  background: var(--leblues);
+  position: relative;
   bottom: 0px;
+  margin: 0 120px;
   padding-right: 70px;
-  padding: 30px;
+  padding: 15px;
+  display: block;
+  gap: 10px;
+}
+
+.footer.dark
+{
+  background: var(--leblues-clair);
 }
 
 #overlay
@@ -35,11 +97,16 @@
   z-index: 900;
 }
 
-
-@media (max-width: 920px) {
-  .container
-  {
+/* Tout périphérique mobile <= 920px élargit le conteneur */
+@media (max-width: 920px)
+{
+  .header {
     margin: 0;
-    width: 100%;
+  }
+  .container {
+    margin: 0;
+  }
+  .footer {
+    margin: 0;
   }
 }

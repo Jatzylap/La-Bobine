@@ -1,7 +1,7 @@
-#sidebar-logo
+body #overlay.open
 {
-  display: block;
-  margin: 110px auto 20px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #sidebar
@@ -19,38 +19,27 @@
   z-index: 1000;
 }
 
-#sidebar #bouton-sidebar
+#sidebar.dark
 {
-    display: block;
-    margin: 10px auto;
+  background: #353433;
 }
 
-#sidebar #bouton-sidebar-child
+#sidebar #bouton-du-sidebar
 {
-  width: 250px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#sidebar #bouton-child-du-sidebar
+{
   max-height: 0;
   opacity: 0;
   display: block;
-  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   pointer-events: none;
-  transition: max-height 0.2s ease, opacity 0.2s ease, margin 0.2s ease, padding 0.2s ease;
-}
-
-#sidebar.programs-open #bouton-sidebar-child
-{
-  max-height: 60px;
-  opacity: 1;
-  margin: 6px auto;
-  padding: 8px 0;
-  pointer-events: auto;
-}
-
-body #overlay.open
-{
-  opacity: 1;
-  pointer-events: auto;
+  margin: 0 auto 0px auto;
+  transition: 0.2s ease;
 }
 
 #sidebar.open

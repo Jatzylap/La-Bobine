@@ -1,6 +1,4 @@
 user-agent: *
-disallow: /src/
+disallow: /film/
+disallow: /programme/2025-2026.html
 sitemap: https://www.labobineuzel.fr/sitemap.xml
-sitemap: http://www.labobineuzel.fr/sitemap.xml
-sitemap: https://labobineuzel.fr/sitemap.xml
-sitemap: http://labobineuzel.fr/sitemap.xml
