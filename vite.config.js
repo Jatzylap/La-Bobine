@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 export default defineConfig(
 {
     // base defaults to "/"
-    base: "/La-Bobine/",
+    // base: "/",
     build: {
         rollupOptions: {
             input: {
