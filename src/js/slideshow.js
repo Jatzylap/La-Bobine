@@ -1,5 +1,6 @@
 let slideIndex = 1;
-window.setTimeout(autoSlide, 8000);
+let id = window.setTimeout(autoSlide, 8000);
+let id2;
 
 function plusSlides(n)
 {
@@ -12,12 +13,16 @@ function plusSlides(n)
         slides[i].classList.remove("active");
     }
     slides[slideIndex - 1].classList.add("active");
+    window.clearTimeout(id);
+    window.clearTimeout(id2);
+    id2 = window.setTimeout(autoSlide, 16000);
 }
 
 function autoSlide()
 {
     plusSlides(1);
-    window.setTimeout(autoSlide, 8000);
+    window.clearTimeout(id2);
+    id = window.setTimeout(autoSlide, 8000);
 }
 
 window.plusSlides = plusSlides;
