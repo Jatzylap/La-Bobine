@@ -6,9 +6,15 @@ export default defineConfig(
     // base: "/",
     build: {
         rollupOptions: {
+            html({
+                    fileName: '404.html',
+                    title: '404',
+                    template,
+                }),
             input: {
                 main: 'index.html',
                 contact: 'contact.html',
+                '404': '404.html',
                 'info-pratique/a-propos': 'info-pratique/a-propos.html',
                 'programme/2025-2026': 'programme/2025-2026.html',
                 'programme/2026-2027': 'programme/2026-2027.html',

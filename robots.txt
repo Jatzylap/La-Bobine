@@ -1,4 +1,3 @@
 user-agent: *
 disallow: /programme/2025-2026.html
-disallow: 404.html
 sitemap: https://www.labobineuzel.fr/sitemap.xml
