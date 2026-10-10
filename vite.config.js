@@ -7,9 +7,9 @@ export default defineConfig(
     build: {
         rollupOptions: {
             input: {
-                '404': '404.html',
                 main: 'index.html',
                 contact: 'contact.html',
+                '404': '404.html',
                 'info-pratique/a-propos': 'info-pratique/a-propos.html',
                 'programme/2025-2026': 'programme/2025-2026.html',
                 'programme/2026-2027': 'programme/2026-2027.html',
