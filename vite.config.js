@@ -8,7 +8,13 @@ export default defineConfig(
 
     plugins: [
         legacy({
-          targets: ['defaults', 'not IE 11'],
+            targets: ['defaults', 'not IE 11'],
+            modernTargets: [
+                'chrome>=70',
+                'safari>=16.4',
+                'chromeAndroid>=105',
+                'iOS>=16.4'
+            ]
         }),
     ],
     build: {
