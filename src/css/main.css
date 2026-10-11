@@ -26,6 +26,7 @@ body.dark
 .header
 {
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -48,14 +49,14 @@ body.dark
   margin: 0;
 }
 
-.header img
+.logo img
 {
-  display: block;
+  display: flex;
   position: absolute;
   top: 50%;
   left: calc(100% + 92px);
   transform: translateY(-50%);
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .container
@@ -119,8 +120,9 @@ body.dark
   z-index: 900;
 }
 
+
 /* Tout périphérique mobile <= 920px élargit le conteneur */
-@media (max-width: 920px)
+@media (width <= 920px)
 {
   .header {
     margin: 0px;
