@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite'
+import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig(
 {
     // base defaults to "/"
     // base: "/",
+
+    plugins: [
+        legacy({
+          targets: ['defaults', 'not IE 11'],
+        }),
+    ],
     build: {
         rollupOptions: {
             input: {
