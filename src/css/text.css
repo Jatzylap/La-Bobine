@@ -82,7 +82,7 @@ footer
 {
     font-family: 'Barlow Condensed', sans-serif;
     position: absolute;
-    color: white;
+    color: var(--pantone7417c);
     font-size: 30px;
     z-index: 5;
     line-height: 1em;
@@ -94,18 +94,18 @@ footer
   top: 0;
   left: 0;
   padding: 10px 10px 10px;
+  background-color: white;
   width: 45px;
-  background-color: var(--pantone7417c);
   text-align: center;
+  border-left: 4px solid var(--pantone7417c);
 }
 
 .slide_text.panel
 {
   bottom: 0;
   right: 0;
-  background-color: white;
-  color: var(--pantone7417c);
   border-left: 4px solid var(--pantone7417c);
+  background-color: white;
   text-align: left;
   padding: 5px;
 }
@@ -120,13 +120,14 @@ footer
   text-transform: none;
   font-weight: bold;
   font-size: 35px;
-  background-color:rgba(0,0,0,0);
   line-height: 1.21;
+  border-left: 4px solid var(--pantone7417c);
+  color: white;
 }
 
 .title span
 {
-  background-color: var(--leblues);
+  background-color: var(--pantone7417c);
 }
 
 .slide_text.dark
