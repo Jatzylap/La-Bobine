@@ -3,7 +3,6 @@ import footer_html from '../html/footer.html?raw'
 
 import "./theme.js"
 import "./sidebar.js"
-import "./slideshow.js"
 
 const nav = document.querySelector("#navigation");
 const footer = document.querySelector(".footer");

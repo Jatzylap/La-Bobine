@@ -41,7 +41,7 @@ body.dark
   margin: 0 120px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .container.dark
@@ -97,15 +97,15 @@ body.dark
 }
 
 /* Tout périphérique mobile <= 920px élargit le conteneur */
-@media (max-width: 920px)
+@media (width <= 920px)
 {
   .header {
-    margin: 0;
+    margin: 0px;
   }
   .container {
-    margin: 0;
+    margin: 0px;
   }
   .footer {
-    margin: 0;
+    margin: 0px;
   }
 }
