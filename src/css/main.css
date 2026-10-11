@@ -25,7 +25,10 @@ body.dark
 
 .header
 {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   background: var(--pantone7417c);
   text-align: center;
   cursor: pointer;
@@ -33,6 +36,26 @@ body.dark
   padding-bottom: 20px;
   margin: 0 120px;
   text-decoration: none;
+}
+
+.logo
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.header img
+{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 42px);
+  transform: translateY(-50%);
+  object-fit: contain;
 }
 
 .container
