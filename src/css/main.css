@@ -73,6 +73,33 @@ body.dark
   background: #222222;
 }
 
+.error-container
+{
+  padding: 0;
+}
+
+.bobinator-corridor
+{
+  width: 100%;
+  height: 520px;
+  display: grid;
+  place-items: center;
+}
+
+.bobinator-corridor__square
+{
+  width: 98%;
+  height: 98%;
+  display: grid;
+  place-items: center;
+}
+
+.bobinator-corridor__square--outer
+{
+  width: 100%;
+  height: 100%;
+}
+
 .sub-container
 {
   margin: 0px 0px 30px 4%;
