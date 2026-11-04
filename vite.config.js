@@ -22,6 +22,7 @@ export default defineConfig(
             input: {
                 main: 'index.html',
                 contact: 'contact.html',
+                presse: 'presse.html',
                 '404': '404.html',
                 'info-pratique/a-propos': 'info-pratique/a-propos.html',
                 'programme/2025-2026': 'programme/2025-2026.html',
