@@ -2,8 +2,13 @@ let slideIndex = 1;
 let id = window.setTimeout(autoSlide, 8000);
 let id2;
 
+const slideshow = document.querySelector(".slideshow");
+
 function plusSlides(n)
 {
+    // Sometimes we don't want to run into issues on startup, so we check those and let it run again
+    if (!slideshow) return;
+
     const slides = document.getElementsByClassName("slide");
 
     slideIndex += n;
